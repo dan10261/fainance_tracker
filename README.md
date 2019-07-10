@@ -38,7 +38,7 @@ Things you may want to cover:
 * Create a User table in the database
 	rake db:migrate
 
-* pull up application controller add this line in the class
+* pull up application_controller add this line in the class
 	before_action :authenticate_user!
 
 * go to the welcome index page and add a link to log out
@@ -56,6 +56,7 @@ Things you may want to cover:
 	rails generate bootstrap:install static
 
 * rails g bootstrap:layout application
+	override using Y
 	enter capital Y 
 
 * add another gem to Gemfile
@@ -67,6 +68,11 @@ Things you may want to cover:
 	above *= require_tree .
 	add this line
 	*= require devise_bootstrap_views (But for my case, I need to remove this line)
+* go to asset/stylesheets/aplication.js
+	below //= require rails-ujs
+	add this line 
+	//= require jquery
+	//= require twitter/bootstrap
 
 * rails g devise:views:locale en
 

@@ -12,20 +12,7 @@
 //
 //= require rails-ujs
 //= require jquery
+//= require twitter/bootstrap
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-
-
-$(document).on('turbolinks:load', function(){
-	
-	//close notice message
-	$('.alert .close')
-	.on('click', function() {
-	  $(this)
-	    .closest('.alert')
-	    .fadeOut('fade')
-	  ;
-	});
-	
-});
