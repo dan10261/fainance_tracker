@@ -32,7 +32,13 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Portfolios", my_portfolio_path  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
+            <li>
+            <% if current_user %>
+            	<%= link_to "log out",destroy_user_session_path, method: :delete %>
+            <% else %>
+            	<%= link_to "login ",user_session_path %>
+            <% end %>
+            </li>
             <li><%= link_to "Link3", "/path3"  %></li>
           </ul>
         </div>
@@ -51,7 +57,13 @@
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
               <li><%= link_to "Portfolios", my_portfolio_path  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
+              <li>
+              	<% if current_user %>
+            		<%= link_to "log out",destroy_user_session_path, method: :delete %>
+            	<% else %>
+            		<%= link_to "login ",user_session_path %>
+           		<% end %>
+              </li>
               <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
           </div><!--/.well -->

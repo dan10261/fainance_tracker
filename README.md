@@ -106,3 +106,19 @@ Things you may want to cover:
 
 *  ----- you can validate your stock secret key with :
 	https://cloud.iexapis.com/beta/account/usage/messages?token='SECRET KEY PASTE HERE'
+	
+**********************Add Model association************************************
+
+* Use below command to generate migration and model files altogether
+	 rails generate model UserStock user:references stock:references
+	 
+* Go to user model file
+	has_many :user_stocks 
+	has_many :stocks , through: :user_stocks
+
+* Go to stock model file
+	has_many :user_stocks
+	has_many :users, through: user_stocks
+
+* Generate a UserStocks controller
+	rails generate controller UserStocks
