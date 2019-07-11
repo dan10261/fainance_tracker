@@ -1,0 +1,12 @@
+	<div class=" stock-results row form-group" >
+		<div class=" no-padding  col-md-6">
+		 	<%= bootstrap_flash %>
+		 	<% if @stock %>
+				<div class="well  col-md-12">	
+					<strong>Name: </strong><%= @stock.name %>		
+					<strong>Ticker: </strong><%= @stock.ticker %>		
+					<strong>Price: </strong><%= @stock.last_price %>
+				</div>
+			<% end %>
+		</div>	
+	</div>

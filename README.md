@@ -83,3 +83,26 @@ Things you may want to cover:
 
 * start my server
 	rails s
+ 
+* ****************** Add iex client ********************* 
+* add a new gem called iex-ruby-client to your Gemfile
+	gem 'iex-ruby-client'
+	and then run
+	bundle install
+* create a free account https://iexcloud.io/
+
+**********************Add gem stock_quote************************************
+
+* gem 'stock_quote'
+
+* bundle install --without production
+
+* enter commands: 
+	rails console
+	StockQuote::Stock.new(api_key: 'SECRET KEY PASTE HERE') 
+	StockQuote::Stock.quote('GOOG')  
+
+* ---GOOG : Ticker symble for google
+
+*  ----- you can validate your stock secret key with :
+	https://cloud.iexapis.com/beta/account/usage/messages?token='SECRET KEY PASTE HERE'

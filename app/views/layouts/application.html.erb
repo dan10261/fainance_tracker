@@ -31,7 +31,7 @@
         <a class="navbar-brand" href="#">FinanceTrackerApp</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
+            <li><%= link_to "Portfolios", my_portfolio_path  %></li>
             <li><%= link_to "Link2", "/path2"  %></li>
             <li><%= link_to "Link3", "/path3"  %></li>
           </ul>
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container main-content">
       <div class="row">
         <div class="col-lg-9">
           <%= bootstrap_flash %>
@@ -50,7 +50,7 @@
             <h3>Sidebar</h3>
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
+              <li><%= link_to "Portfolios", my_portfolio_path  %></li>
               <li><%= link_to "Link2", "/path2"  %></li>
               <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
@@ -58,11 +58,13 @@
         </div><!--/span-->
       </div><!--/row-->
 
-      <footer>
-        <p>&copy; Company 2019</p>
-      </footer>
+
 
     </div> <!-- /container -->
-
+		<div class="container">
+	      <footer>
+        	<p>&copy; Company 2019</p>
+      	  </footer>
+  		</div>
   </body>
 </html>
