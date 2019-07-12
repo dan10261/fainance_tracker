@@ -1,10 +1,16 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.5'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+#work laptop
+ruby '2.5.5'
+#personal laptop
+ruby '2.5.3'
+
 gem 'rails', '~> 5.2.3'
+
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
@@ -16,6 +22,8 @@ gem 'stock_quote'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
+#add font-awesome
+gem 'font-awesome-rails'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

@@ -122,3 +122,7 @@ Things you may want to cover:
 
 * Generate a UserStocks controller
 	rails generate controller UserStocks
+
+
+* Generate a  Friendship model
+	rails generate model Friendship

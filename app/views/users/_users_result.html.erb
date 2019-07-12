@@ -1,0 +1,22 @@
+	<div class=" users-results row form-group" >
+		<div class=" no-padding  col-md-6">
+		 	<% if params[:action]=='search'%>
+		 		<%= bootstrap_flash %>
+		 	<% end %>
+		 	<% if @users %>
+				<% @users.each do |user|%>
+					<div class="well  col-md-12">	
+						<strong>Name: </strong><%= user.full_name %>		
+						<strong>Email: </strong><%= user.email%>		
+						<% if !current_user.already_friends?(user.id) && current_user.id != user.id %>
+							<%= link_to "Add to my friends", friendships_path(user_id:current_user, friend_id: user.id), method: :post, class: "btn btn-xs btn-success"%>
+						<% else %>
+							<span class="label label-default">
+								You are already friends.								
+							</span>
+						<% end %>
+					</div>
+				<% end %>
+			<% end %>
+		</div>	
+	</div>

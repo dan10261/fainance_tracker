@@ -17,3 +17,35 @@ body{
 footer{
 	min-height: 5vh;
 }
+.no-padding {
+	padding: 0px !important;
+}
+.padding-left-only{
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;	
+}
+a.btn-logout:hover {
+	background-color: #FF1493 !important;
+	color:white !important;
+}
+
+a.btn-logout, a.btn-logout:visited,a.btn-logout:active {
+	background-color: #d9534f !important;
+	color:white !important;
+}
+.btn-background-red{
+background-color: #d9534f !important;
+}
+.btn-color-white{
+	color:white !important;
+}
+a.btn-login:hover {
+	background-color: #357ebd !important;
+	color:white !important;
+}
+
+a.btn-login, a.btn-login:visited,a.btn-login:active {
+	background-color: #357ebd !important;
+	color:white !important;
+}

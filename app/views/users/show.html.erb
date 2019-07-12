@@ -1,0 +1,18 @@
+<div class="well  col-md-12">	
+	<center><h1>User Details</h1></center>
+	<div class="col-md-12 ">
+		<strong>Name: </strong><%= @user.full_name %>		<br/>
+		<strong>Email: </strong><%= @user.email%>							
+	</div>
+	<div class="col-md-12 ">
+		<% if @user_stocks.count > 0 %>
+			<h2>List of tracked stocks</h2>
+			<%= render 'stocks/list'%>
+		<% else %>
+			This user does not track any stocks
+		<% end %>
+	</div>
+	<div class="col-md-12 ">
+		<%= link_to "back", my_friends_path, class: "btn btn-primary btn-xs"%>
+	</div>
+</div>
