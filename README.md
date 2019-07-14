@@ -3,6 +3,10 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+
+* refernce udemy.com
+https://www.udemy.com/the-complete-ruby-on-rails-developer-course/
+
 Things you may want to cover:
 
 * Ruby version
